@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>INICIO</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../css/registro.css" />
+	<meta charset="utf-8" />
+ 
+</head>
+<body >
+
+
+    <div class="principal">
+    <div class="inicio">
+      <img class="logo" src="../img/logo/logo_transparent.png">
+        
+    <h2 id="titulo1">NUEVO USUARIO</h2>
+    <form name="form1" action="agregar_usuario.php" method="GET">
+        <input type="text" name="nombre" placeholder="Nombre" id="nombre"><br><br>
+        <input type="text" name="apellidos" placeholder="Apellidos" id="apellidos"><br><br>
+        <input type="email" name="correo" placeholder="correo electronico" id="correo"><br><br>
+        <input type="password" name="contraseña" placeholder="contraseña" id="contraseña"><br><br>
+        <input type="password" name="contraseña2" placeholder="Repetir Contraseña" id="contraseña2"><br><br>
+        <a id="fecha">Fecha de nacimiento: </a>
+        <input type="date" name="fecha_nacimiento" id="fecha_nacimiento"><br><br>
+
+        <input type="number" name="telefono" placeholder="Número de teléfono" id="telefono"><br><br>
+        <br><br>
+        <a id="recordar">Politica de privacidad:</a>
+        <label class="mycheckbox">
+            <input type="checkbox" name="">
+            <span>
+              <i class="fas fa-check on"></i>
+              <i class="fas fa-times off"></i>
+            </span>
+          </label>
+          <br><br><br><br>
+        <input type="submit" name="botonregistro" id="botonregistro" value="REGISTRARSE" onclick="iniciosesion()">
+    </form> 
+    </div>
+    </div>
+</body>
+</html>

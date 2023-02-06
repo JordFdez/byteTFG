@@ -1,0 +1,158 @@
+
+
+
+       
+body{
+		
+			background-color: #434343;
+
+	}
+	
+
+ .mycheckbox input:checked ~ span::after{
+background: #B791F6;
+transform: scale(0.85) translate(35px);
+}
+.mycheckbox input:checked ~ span .on{
+transform: translate(30px);
+opacity: 1;
+}
+
+.mycheckbox input:checked ~ span .off{
+transform: translate(30px);
+opacity: 0;
+}
+
+
+.mycheckbox input {
+display: none;
+}
+
+.mycheckbox span {
+display: inline-block;
+width: 60px;
+height: 30px;
+border-radius: 30px;
+background: rgb(187, 186, 186);
+cursor: pointer;
+box-shadow: inset 0px 0px 2px rgb(15, 15, 15);
+
+position: relative;
+}
+
+.mycheckbox span::after {
+content: "";
+display: block;
+width: 30px;
+height: 30px;
+transform: scale(0.85);
+border-radius: 30px;
+background: rgb(73, 73, 73);
+transition: 0.5s;
+box-shadow: inset 0px 0px 2px rgb(37, 37, 37);
+}
+
+.mycheckbox i {
+position: absolute;
+left: 7px;
+top: 7px;
+z-index: 1;
+color: white;
+transition: 0.5s;
+}
+
+.mycheckbox .on {
+opacity: 0;
+left: 7px;
+top: 7px;
+}
+
+.mycheckbox .off {
+left: 9px;
+top: 7px;
+}
+
+.mycheckbox{
+    float: right;
+    margin-right: 58px;
+
+}
+
+.principal{
+position: relative;
+}
+
+.inicio{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin-left: 45%;
+}
+.logo{
+width: 350px;
+height: 350px;
+margin-left: -26%;
+}
+
+#botoninicio{
+border-radius: 30px;
+width: 180px;
+height: 40px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 14pt;
+background-color: #B791F6;
+border: 0;
+color: rgb(73, 73, 73)
+}
+#botoninicio:hover{
+    background-color: rgb(178, 117, 235);
+}
+
+
+#registro {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 30px;
+}
+
+#titulo1 {
+    color: #BABABA ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#recordar{
+    color: #BABABA;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: -59px;
+    
+
+}
+
+#correo{
+    width: 300px;
+    height: 25px;
+    border-radius: 13px;
+    border: 0;
+    background-color: #B7B7B7 ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #DEDEDE;
+    margin-left: -60px;
+}
+
+#contraseña{
+    width: 300px;
+    height: 25px;
+    border-radius: 13px;
+    border: 0;
+    background-color: #B7B7B7 ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #DEDEDE;
+    margin-left: -60px;
+}
+
+ ::placeholder{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #DEDEDE ;
+    font-size: 15pt;
+    padding-left: 10px;
+ }

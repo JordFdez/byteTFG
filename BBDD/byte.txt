@@ -1,0 +1,39 @@
+create database byte;
+
+use byte;
+
+create table artista(
+id int PRIMARY KEY auto_increment,
+nombre varchar(100),
+);
+
+create table genero(
+id int PRIMARY KEY auto_increment,
+nombre varchar(100),
+);
+
+create table album(
+id int PRIMARY KEY auto_increment,
+nombre varchar(100),
+);
+
+create table canciones(
+id int PRIMARY KEY auto_increment,
+titulo VARCHAR(100),
+imagen varchar(100),
+archivo VARCHAR(100),
+descripcion VARCHAR(100),
+id_artista REFERENCES artista(id),
+id_genero REFERENCES genero(id),
+id_album REFERENCES album(id)
+);
+
+create table usuario(
+id int PRIMARY KEY auto_increment,
+nombre VARCHAR(100),
+apellido VARCHAR(100),
+email varchar(100),
+passwd varchar(100),
+fecha_nacimiento date,
+telefono int
+);

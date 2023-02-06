@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>INICIO</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../css/inicio.css" />
+	<meta charset="utf-8" />
+ 
+</head>
+<body>
+  
+    <div class="principal">
+    <div class="inicio">
+      <img class="logo" src="../img/logo/logo_transparent.png">
+        
+    <h2 id="titulo1">INICIO DE SESIÓN</h2>
+    <form name="form1" action="login_usuario.php" method="get">
+        <input type="email" name="correo" placeholder="correo electronico" id="correo"><br><br>
+        <input type="password" name="contraseña" placeholder="contraseña" id="contraseña"><br><br>
+        <a id="recordar">Recordar contraseña:</a>
+        <label class="mycheckbox">
+            <input type="checkbox" name="">
+            <span>
+              <i class="fas fa-check on"></i>
+              <i class="fas fa-times off"></i>
+            </span>
+          </label>
+          <br><br><br><br>
+        <input type="submit" name="botoninicio" id="botoninicio" value="INICIAR SESIÓN" onclick="iniciosesion()">
+    </form>
+    <br><br><br><br><br><br><br><br><br><br>
+    <a href="registro.html" name="registro" id="registro">REGISTRATE AQUÍ</a> 
+    </div>
+    </div>
+</body>
+</html>
